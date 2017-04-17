@@ -1,0 +1,623 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/luismahou/grunt-hashres">grunt-hashres (v0.4.1)</a>
+</h1>
+<h4>Hashes your js and css files and rename the <script> and <link> declarations that refer to them in your html/php/etc files.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.grunt-hashres">module grunt-hashres</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.grunt-hashres">
+            function <span class="apidocSignatureSpan"></span>grunt-hashres
+            <span class="apidocSignatureSpan">(grunt)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.hashres">
+            function <span class="apidocSignatureSpan">grunt-hashres.</span>hashres
+            <span class="apidocSignatureSpan">(grunt)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.toString">
+            function <span class="apidocSignatureSpan">grunt-hashres.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">grunt-hashres.</span>hashresHelper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">grunt-hashres.</span>hashresUtils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.grunt-hashres.hashres">module grunt-hashres.hashres</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.hashres.hashres">
+            function <span class="apidocSignatureSpan">grunt-hashres.</span>hashres
+            <span class="apidocSignatureSpan">(grunt)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.grunt-hashres.hashresHelper">module grunt-hashres.hashresHelper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.hashresHelper.hashAndSub">
+            function <span class="apidocSignatureSpan">grunt-hashres.hashresHelper.</span>hashAndSub
+            <span class="apidocSignatureSpan">(grunt, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.grunt-hashres.hashresUtils">module grunt-hashres.hashresUtils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.hashresUtils.compileFormat">
+            function <span class="apidocSignatureSpan">grunt-hashres.hashresUtils.</span>compileFormat
+            <span class="apidocSignatureSpan">(format)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.hashresUtils.compileSearchFormat">
+            function <span class="apidocSignatureSpan">grunt-hashres.hashresUtils.</span>compileSearchFormat
+            <span class="apidocSignatureSpan">(format)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.hashresUtils.md5">
+            function <span class="apidocSignatureSpan">grunt-hashres.hashresUtils.</span>md5
+            <span class="apidocSignatureSpan">(filepath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.hashresUtils.preg_quote">
+            function <span class="apidocSignatureSpan">grunt-hashres.hashresUtils.</span>preg_quote
+            <span class="apidocSignatureSpan">(str, delimiter)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.grunt-hashres.toString">module grunt-hashres.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.toString.toString">
+            function <span class="apidocSignatureSpan">grunt-hashres.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.grunt-hashres" id="apidoc.module.grunt-hashres">module grunt-hashres</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-hashres.grunt-hashres" id="apidoc.element.grunt-hashres.grunt-hashres">
+        function <span class="apidocSignatureSpan"></span>grunt-hashres
+        <span class="apidocSignatureSpan">(grunt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">grunt-hashres = function (grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    jshint: {
+      all: [
+        &#x27;Gruntfile.js&#x27;,
+        &#x27;tasks/*.js&#x27;,
+        &#x27;&#x3c;%= vows.all.files %&#x3e;&#x27;,
+      ],
+      options: {
+        jshintrc: &#x27;.jshintrc&#x27;,
+      },
+    },
+
+    vows: {
+      all: {
+        files: &#x27;test/*.spec.js&#x27;
+      }
+    }
+
+  });
+
+  // These plugins provide necessary tasks.
+  grunt.loadNpmTasks(&#x27;grunt-contrib-jshint&#x27;);
+  grunt.loadNpmTasks(&#x27;grunt-vows&#x27;);
+
+  grunt.registerTask(&#x27;default&#x27;, [&#x27;jshint&#x27;, &#x27;vows&#x27;]);
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-hashres.hashres" id="apidoc.element.grunt-hashres.hashres">
+        function <span class="apidocSignatureSpan">grunt-hashres.</span>hashres
+        <span class="apidocSignatureSpan">(grunt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hashres = function (grunt) {
+
+  var helper = require(&#x27;./hashresHelper&#x27;);
+
+  grunt.registerMultiTask(&#x27;hashres&#x27;, &#x27;Your task description goes here.&#x27;, function() {
+
+    // Merging options with defaults
+    var options = this.options({
+      fileNameFormat: &#x27;${hash}.${name}.cache.${ext}&#x27;,
+      encoding      : &#x27;utf8&#x27;,
+      renameFiles   : true
+    });
+
+    // Required properties: &#x27;src&#x27; and &#x27;dest&#x27;
+    this.requiresConfig(this.name + &#x27;.&#x27; + this.target + &#x27;.src&#x27;);
+    this.requiresConfig(this.name + &#x27;.&#x27; + this.target + &#x27;.dest&#x27;);
+    helper.hashAndSub(grunt, {
+      files: this.files,
+      src           : options.src,
+      dest          : options.dest,
+      encoding      : options.encoding,
+      fileNameFormat: options.fileNameFormat,
+      renameFiles   : options.renameFiles
+    });
+  });
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-hashres.toString" id="apidoc.element.grunt-hashres.toString">
+        function <span class="apidocSignatureSpan">grunt-hashres.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.grunt-hashres.hashres" id="apidoc.module.grunt-hashres.hashres">module grunt-hashres.hashres</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-hashres.hashres.hashres" id="apidoc.element.grunt-hashres.hashres.hashres">
+        function <span class="apidocSignatureSpan">grunt-hashres.</span>hashres
+        <span class="apidocSignatureSpan">(grunt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hashres = function (grunt) {
+
+  var helper = require(&#x27;./hashresHelper&#x27;);
+
+  grunt.registerMultiTask(&#x27;hashres&#x27;, &#x27;Your task description goes here.&#x27;, function() {
+
+    // Merging options with defaults
+    var options = this.options({
+      fileNameFormat: &#x27;${hash}.${name}.cache.${ext}&#x27;,
+      encoding      : &#x27;utf8&#x27;,
+      renameFiles   : true
+    });
+
+    // Required properties: &#x27;src&#x27; and &#x27;dest&#x27;
+    this.requiresConfig(this.name + &#x27;.&#x27; + this.target + &#x27;.src&#x27;);
+    this.requiresConfig(this.name + &#x27;.&#x27; + this.target + &#x27;.dest&#x27;);
+    helper.hashAndSub(grunt, {
+      files: this.files,
+      src           : options.src,
+      dest          : options.dest,
+      encoding      : options.encoding,
+      fileNameFormat: options.fileNameFormat,
+      renameFiles   : options.renameFiles
+    });
+  });
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.grunt-hashres.hashresHelper" id="apidoc.module.grunt-hashres.hashresHelper">module grunt-hashres.hashresHelper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-hashres.hashresHelper.hashAndSub" id="apidoc.element.grunt-hashres.hashresHelper.hashAndSub">
+        function <span class="apidocSignatureSpan">grunt-hashres.hashresHelper.</span>hashAndSub
+        <span class="apidocSignatureSpan">(grunt, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hashAndSub = function (grunt, options) {
+
+  var src              = options.src,
+      dest             = options.dest,
+      encoding         = options.encoding,
+      fileNameFormat   = options.fileNameFormat,
+      renameFiles      = options.renameFiles,
+      nameToHashedName = {},
+      nameToNameSearch = {},
+      formatter        = null,
+      searchFormatter  = null;
+
+  grunt.log.debug(&#x27;files: &#x27; + options.files);
+  grunt.log.debug(&#x27;Using encoding &#x27; + encoding);
+  grunt.log.debug(&#x27;Using fileNameFormat &#x27; + fileNameFormat);
+  grunt.log.debug(renameFiles ? &#x27;Renaming files&#x27; : &#x27;Not renaming files&#x27;);
+
+  formatter = utils.compileFormat(fileNameFormat);
+  searchFormatter = utils.compileSearchFormat(fileNameFormat);
+
+  if (options.files) {
+    options.files.forEach(function(f) {
+      f.src.forEach(function(src) {
+        var md5        = utils.md5(src).slice(0, 8),
+            fileName   = path.basename(src),
+            lastIndex  = fileName.lastIndexOf(&#x27;.&#x27;),
+            renamed    = formatter({
+              hash: md5,
+              name: fileName.slice(0, lastIndex),
+              ext : fileName.slice(lastIndex + 1, fileName.length)
+            }),
+            nameSearch = searchFormatter({
+              hash: /[0-9a-f]{8}/,
+              name: fileName.slice(0, lastIndex),
+              ext: fileName.slice(lastIndex + 1, fileName.length)
+            });
+
+        // Mapping the original name with hashed one for later use.
+        nameToHashedName[fileName] = renamed;
+        nameToNameSearch[fileName] = nameSearch;
+
+        // Renaming the file
+        if (renameFiles) {
+          fs.renameSync(src, path.resolve(path.dirname(src), renamed));
+        }
+        grunt.log.write(src + &#x27; &#x27;).ok(renamed);
+      });
+
+      // sort by length
+      // It is very useful when we have bar.js and foo-bar.js
+      // @crodas
+      var files = [];
+      for (var name in nameToHashedName) {
+        files.push([name, nameToHashedName[name]]);
+      }
+      files.sort(function(a, b) {
+        return b[0].length - a[0].length;
+      });
+
+
+
+      // Substituting references to the given files with the hashed ones.
+      grunt.file.expand(f.dest).forEach(function(f) {
+        var destContents = fs.readFileSync(f, encoding);
+        files.forEach(function(value) {
+          grunt.log.debug(&#x27;Substituting &#x27; + value[0] + &#x27; by &#x27; + value[1])
+          destContents = destContents.replace(new RegExp(utils.preg_quote(value[0])+&#x22;(\\?[0-9a-z]+)?&#x22;, &#x22;g&#x22;), value[1]);
+
+          grunt.log.debug(&#x27;Substituting &#x27; + nameToNameSearch[value[0]] + &#x27; by &#x27; + value[1])
+          destContents = destContents.replace(
+                new RegExp(nameToNameSearch[value[0]], &#x22;g&#x22;),
+                value[1]
+            );
+        });
+        grunt.log.debug(&#x27;Saving the updated contents of the outination file&#x27;);
+        fs.writeFileSync(f, destContents, encoding);
+      });
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  encoding      : &#x27;utf8&#x27;,
+  renameFiles   : true
+});
+
+// Required properties: &#x27;src&#x27; and &#x27;dest&#x27;
+this.requiresConfig(this.name + &#x27;.&#x27; + this.target + &#x27;.src&#x27;);
+this.requiresConfig(this.name + &#x27;.&#x27; + this.target + &#x27;.dest&#x27;);
+helper.<span class="apidocCodeKeywordSpan">hashAndSub</span>(grunt, {
+  files: this.files,
+  src           : options.src,
+  dest          : options.dest,
+  encoding      : options.encoding,
+  fileNameFormat: options.fileNameFormat,
+  renameFiles   : options.renameFiles
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.grunt-hashres.hashresUtils" id="apidoc.module.grunt-hashres.hashresUtils">module grunt-hashres.hashresUtils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-hashres.hashresUtils.compileFormat" id="apidoc.element.grunt-hashres.hashresUtils.compileFormat">
+        function <span class="apidocSignatureSpan">grunt-hashres.hashresUtils.</span>compileFormat
+        <span class="apidocSignatureSpan">(format)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compileFormat = function (format) {
+  return function(options) {
+    var output = format.replace(/\$\{hash\}/g, options.hash);
+    output = output.replace(/\$\{name\}/g, options.name);
+    output = output.replace(/\$\{ext\}/g, options.ext);
+    return output;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    searchFormatter  = null;
+
+grunt.log.debug(&#x27;files: &#x27; + options.files);
+grunt.log.debug(&#x27;Using encoding &#x27; + encoding);
+grunt.log.debug(&#x27;Using fileNameFormat &#x27; + fileNameFormat);
+grunt.log.debug(renameFiles ? &#x27;Renaming files&#x27; : &#x27;Not renaming files&#x27;);
+
+formatter = utils.<span class="apidocCodeKeywordSpan">compileFormat</span>(fileNameFormat);
+searchFormatter = utils.compileSearchFormat(fileNameFormat);
+
+if (options.files) {
+  options.files.forEach(function(f) {
+    f.src.forEach(function(src) {
+      var md5        = utils.md5(src).slice(0, 8),
+          fileName   = path.basename(src),
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-hashres.hashresUtils.compileSearchFormat" id="apidoc.element.grunt-hashres.hashresUtils.compileSearchFormat">
+        function <span class="apidocSignatureSpan">grunt-hashres.hashresUtils.</span>compileSearchFormat
+        <span class="apidocSignatureSpan">(format)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compileSearchFormat = function (format) {
+  format = preg_quote(format);
+  return function(options) {
+    var output = format.split(&#x27;\\$\\{hash\\}&#x27;).join(escapeNonRegex(options.hash));
+    output = output.split(&#x27;\\$\\{name\\}&#x27;).join(escapeNonRegex(options.name));
+    output = output.split(&#x27;\\$\\{ext\\}&#x27;).join(escapeNonRegex(options.ext));
+    return output;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+grunt.log.debug(&#x27;files: &#x27; + options.files);
+grunt.log.debug(&#x27;Using encoding &#x27; + encoding);
+grunt.log.debug(&#x27;Using fileNameFormat &#x27; + fileNameFormat);
+grunt.log.debug(renameFiles ? &#x27;Renaming files&#x27; : &#x27;Not renaming files&#x27;);
+
+formatter = utils.compileFormat(fileNameFormat);
+searchFormatter = utils.<span class="apidocCodeKeywordSpan">compileSearchFormat</span>(fileNameFormat);
+
+if (options.files) {
+  options.files.forEach(function(f) {
+    f.src.forEach(function(src) {
+      var md5        = utils.md5(src).slice(0, 8),
+          fileName   = path.basename(src),
+          lastIndex  = fileName.lastIndexOf(&#x27;.&#x27;),
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-hashres.hashresUtils.md5" id="apidoc.element.grunt-hashres.hashresUtils.md5">
+        function <span class="apidocSignatureSpan">grunt-hashres.hashresUtils.</span>md5
+        <span class="apidocSignatureSpan">(filepath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">md5 = function (filepath) {
+  var hash = crypto.createHash(&#x27;md5&#x27;);
+  hash.update(fs.readFileSync(String(filepath), &#x27;utf8&#x27;));
+  return hash.digest(&#x27;hex&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+formatter = utils.compileFormat(fileNameFormat);
+searchFormatter = utils.compileSearchFormat(fileNameFormat);
+
+if (options.files) {
+  options.files.forEach(function(f) {
+    f.src.forEach(function(src) {
+      var md5        = utils.<span class="apidocCodeKeywordSpan">md5</span>(src).slice(0, 8),
+          fileName   = path.basename(src),
+          lastIndex  = fileName.lastIndexOf(&#x27;.&#x27;),
+          renamed    = formatter({
+            hash: md5,
+            name: fileName.slice(0, lastIndex),
+            ext : fileName.slice(lastIndex + 1, fileName.length)
+          }),
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-hashres.hashresUtils.preg_quote" id="apidoc.element.grunt-hashres.hashresUtils.preg_quote">
+        function <span class="apidocSignatureSpan">grunt-hashres.hashresUtils.</span>preg_quote
+        <span class="apidocSignatureSpan">(str, delimiter)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function preg_quote(str, delimiter) {
+  // http://kevin.vanzonneveld.net
+  // +   original by: booeyOH
+  // +   improved by: Ates Goral (http://magnetiq.com)
+  // +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
+  // +   bugfixed by: Onno Marsman
+  // +   improved by: Brett Zamir (http://brett-zamir.me)
+  // *     example 1: preg_quote(&#x22;$40&#x22;);
+  // *     returns 1: &#x27;\$40&#x27;
+  // *     example 2: preg_quote(&#x22;*RRRING* Hello?&#x22;);
+  // *     returns 2: &#x27;\*RRRING\* Hello\?&#x27;
+  // *     example 3: preg_quote(&#x22;\\.+*?[^]$(){}=!&#x3c;&#x3e;|:&#x22;);
+  // *     returns 3: &#x27;\\\.\+\*\?\[\^\]\$\(\)\{\}\=\!\&#x3c;\&#x3e;\|\:&#x27;
+  return (str + &#x27;&#x27;).replace(new RegExp(&#x27;[.\\\\+*?\\[\\^\\]$(){}=!&#x3c;&#x3e;|:\\&#x27; + (delimiter || &#x27;&#x27;) + &#x27;-]&#x27;, &#x27;g&#x27;), &#x27;\\$&#x26;&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+      // Substituting references to the given files with the hashed ones.
+      grunt.file.expand(f.dest).forEach(function(f) {
+var destContents = fs.readFileSync(f, encoding);
+files.forEach(function(value) {
+  grunt.log.debug(&#x27;Substituting &#x27; + value[0] + &#x27; by &#x27; + value[1])
+  destContents = destContents.replace(new RegExp(utils.<span class="apidocCodeKeywordSpan">preg_quote</span>(value[0])+&#x22;(\\?[
+0-9a-z]+)?&#x22;, &#x22;g&#x22;), value[1]);
+
+  grunt.log.debug(&#x27;Substituting &#x27; + nameToNameSearch[value[0]] + &#x27; by &#x27; + value[1])
+  destContents = destContents.replace(
+        new RegExp(nameToNameSearch[value[0]], &#x22;g&#x22;),
+        value[1]
+    );
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.grunt-hashres.toString" id="apidoc.module.grunt-hashres.toString">module grunt-hashres.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-hashres.toString.toString" id="apidoc.element.grunt-hashres.toString.toString">
+        function <span class="apidocSignatureSpan">grunt-hashres.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</script></h4></div></body></html>
