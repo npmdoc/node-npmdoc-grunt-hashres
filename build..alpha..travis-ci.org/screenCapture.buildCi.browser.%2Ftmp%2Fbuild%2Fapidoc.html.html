@@ -68,24 +68,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.hashres">
-            function <span class="apidocSignatureSpan">grunt-hashres.</span>hashres
-            <span class="apidocSignatureSpan">(grunt)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.toString">
-            function <span class="apidocSignatureSpan">grunt-hashres.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">grunt-hashres.</span>hashresHelper</span>
 
         </li>
@@ -93,19 +75,6 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">grunt-hashres.</span>hashresUtils</span>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.grunt-hashres.hashres">module grunt-hashres.hashres</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.hashres.hashres">
-            function <span class="apidocSignatureSpan">grunt-hashres.</span>hashres
-            <span class="apidocSignatureSpan">(grunt)</span>
-            </a>
 
         </li>
 
@@ -164,19 +133,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.grunt-hashres.toString">module grunt-hashres.toString</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.grunt-hashres.toString.toString">
-            function <span class="apidocSignatureSpan">grunt-hashres.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -225,105 +181,7 @@
 
 
 
-    <h2>
-        <a href="#apidoc.element.grunt-hashres.hashres" id="apidoc.element.grunt-hashres.hashres">
-        function <span class="apidocSignatureSpan">grunt-hashres.</span>hashres
-        <span class="apidocSignatureSpan">(grunt)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">hashres = function (grunt) {
 
-  var helper = require(&#x27;./hashresHelper&#x27;);
-
-  grunt.registerMultiTask(&#x27;hashres&#x27;, &#x27;Your task description goes here.&#x27;, function() {
-
-    // Merging options with defaults
-    var options = this.options({
-      fileNameFormat: &#x27;${hash}.${name}.cache.${ext}&#x27;,
-      encoding      : &#x27;utf8&#x27;,
-      renameFiles   : true
-    });
-
-    // Required properties: &#x27;src&#x27; and &#x27;dest&#x27;
-    this.requiresConfig(this.name + &#x27;.&#x27; + this.target + &#x27;.src&#x27;);
-    this.requiresConfig(this.name + &#x27;.&#x27; + this.target + &#x27;.dest&#x27;);
-    helper.hashAndSub(grunt, {
-      files: this.files,
-      src           : options.src,
-      dest          : options.dest,
-      encoding      : options.encoding,
-      fileNameFormat: options.fileNameFormat,
-      renameFiles   : options.renameFiles
-    });
-  });
-
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.grunt-hashres.toString" id="apidoc.element.grunt-hashres.toString">
-        function <span class="apidocSignatureSpan">grunt-hashres.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.grunt-hashres.hashres" id="apidoc.module.grunt-hashres.hashres">module grunt-hashres.hashres</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.grunt-hashres.hashres.hashres" id="apidoc.element.grunt-hashres.hashres.hashres">
-        function <span class="apidocSignatureSpan">grunt-hashres.</span>hashres
-        <span class="apidocSignatureSpan">(grunt)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">hashres = function (grunt) {
-
-  var helper = require(&#x27;./hashresHelper&#x27;);
-
-  grunt.registerMultiTask(&#x27;hashres&#x27;, &#x27;Your task description goes here.&#x27;, function() {
-
-    // Merging options with defaults
-    var options = this.options({
-      fileNameFormat: &#x27;${hash}.${name}.cache.${ext}&#x27;,
-      encoding      : &#x27;utf8&#x27;,
-      renameFiles   : true
-    });
-
-    // Required properties: &#x27;src&#x27; and &#x27;dest&#x27;
-    this.requiresConfig(this.name + &#x27;.&#x27; + this.target + &#x27;.src&#x27;);
-    this.requiresConfig(this.name + &#x27;.&#x27; + this.target + &#x27;.dest&#x27;);
-    helper.hashAndSub(grunt, {
-      files: this.files,
-      src           : options.src,
-      dest          : options.dest,
-      encoding      : options.encoding,
-      fileNameFormat: options.fileNameFormat,
-      renameFiles   : options.renameFiles
-    });
-  });
-
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
 
 
 </div>
@@ -591,24 +449,6 @@ files.forEach(function(value) {
     );
 });
 ...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.grunt-hashres.toString" id="apidoc.module.grunt-hashres.toString">module grunt-hashres.toString</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.grunt-hashres.toString.toString" id="apidoc.element.grunt-hashres.toString.toString">
-        function <span class="apidocSignatureSpan">grunt-hashres.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
