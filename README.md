@@ -1,4 +1,7 @@
-# api documentation for  [grunt-hashres (v0.4.1)](https://github.com/luismahou/grunt-hashres)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-hashres.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-hashres) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-hashres.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-hashres)
+# npmdoc-grunt-hashres
+
+#### api documentation for  [grunt-hashres (v0.4.1)](https://github.com/luismahou/grunt-hashres)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-hashres.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-hashres) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-hashres.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-hashres)
+
 #### Hashes your js and css files and rename the <script> and <link> declarations that refer to them in your html/php/etc files.
 
 [![NPM](https://nodei.co/npm/grunt-hashres.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-hashres)
@@ -72,7 +75,8 @@
     "scripts": {
         "test": "node ./node_modules/vows/bin/vows --spec"
     },
-    "version": "0.4.1"
+    "version": "0.4.1",
+    "bin": {}
 }
 ```
 
